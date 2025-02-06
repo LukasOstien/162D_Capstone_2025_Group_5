@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'StateflowBlock'.
  *
- * Model version                  : 4.1
+ * Model version                  : 4.2
  * Simulink Coder version         : 24.1 (R2024a) 19-Nov-2023
- * C/C++ source code generated on : Tue Feb  4 23:22:59 2025
+ * C/C++ source code generated on : Wed Feb  5 20:13:58 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)

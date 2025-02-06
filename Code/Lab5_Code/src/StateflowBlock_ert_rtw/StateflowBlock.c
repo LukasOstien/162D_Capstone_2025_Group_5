@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'StateflowBlock'.
  *
- * Model version                  : 4.1
+ * Model version                  : 4.2
  * Simulink Coder version         : 24.1 (R2024a) 19-Nov-2023
- * C/C++ source code generated on : Tue Feb  4 23:22:59 2025
+ * C/C++ source code generated on : Wed Feb  5 20:13:58 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -269,6 +269,17 @@ void StateflowBlock_step(void)
 
         /* Outport: '<Root>/state' */
         StateflowBlock_Y.state = 2.0;
+      } else if (StateflowBlock_U.right_button_in > 0.0) {
+        StateflowBlock_DW.is_c3_StateflowBlock = StateflowBlock_IN_Turn_Right;
+
+        /* Outport: '<Root>/controlA' */
+        StateflowBlock_Y.controlA = 0.5;
+
+        /* Outport: '<Root>/controlB' */
+        StateflowBlock_Y.controlB = 0.5;
+
+        /* Outport: '<Root>/state' */
+        StateflowBlock_Y.state = 4.0;
       } else {
         /* Outport: '<Root>/controlA' */
         StateflowBlock_Y.controlA = -0.5;
@@ -316,6 +327,17 @@ void StateflowBlock_step(void)
 
         /* Outport: '<Root>/state' */
         StateflowBlock_Y.state = 1.0;
+      } else if (StateflowBlock_U.left_button_in > 0.0) {
+        StateflowBlock_DW.is_c3_StateflowBlock = StateflowBlock_IN_Turn_Left;
+
+        /* Outport: '<Root>/controlA' */
+        StateflowBlock_Y.controlA = -0.5;
+
+        /* Outport: '<Root>/controlB' */
+        StateflowBlock_Y.controlB = -0.5;
+
+        /* Outport: '<Root>/state' */
+        StateflowBlock_Y.state = 3.0;
       } else {
         /* Outport: '<Root>/controlA' */
         StateflowBlock_Y.controlA = 0.5;
