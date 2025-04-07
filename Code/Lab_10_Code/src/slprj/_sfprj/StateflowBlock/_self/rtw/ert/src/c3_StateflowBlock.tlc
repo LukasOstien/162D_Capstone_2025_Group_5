@@ -1,0 +1,111 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   13 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "TargetGlobalAngle"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TargetGlobalAngle"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "TurningAngleTrajectory"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TurningAngleTrajectory"\
+      SrcLocation  ""\
+      Dimensions   [1,20]\
+    }\
+    ChartData {\
+      Name         "TurningAngleTrajectoryIndex"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TurningAngleTrajectoryIndex"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "ServoASweepDirection"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ServoASweepDirection"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "ServoASweepSpeed"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ServoASweepSpeed"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "ServoASweepUpperLimit"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ServoASweepUpperLimit"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "ServoASweepLowerLimit"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ServoASweepLowerLimit"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "ServoAStopSweeping"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ServoAStopSweeping"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "SweepingData"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "SweepingData"\
+      SrcLocation  ""\
+      Dimensions   [2,180]\
+    }\
+    ChartData {\
+      Name         "SweepingIndex"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "SweepingIndex"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_StateflowBlock"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c3_StateflowBlock"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_SteeringToward"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "SteeringToward"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
