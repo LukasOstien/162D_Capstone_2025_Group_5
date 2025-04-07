@@ -1,7 +1,0 @@
-% -------------------------------------------------------------------
-
-% Run this sketch to set the matlab workspace (directory) to scr folder
-% so the g
-
-open("ControlLoop.slx");
-open("StateflowBlock.slx");
